@@ -1,10 +1,10 @@
-<!-- index.php -->
+<!-- login.php -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrazione Cogestione</title>
+    <title>Login Cogestione</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -48,19 +48,19 @@
             background-color: #45a049;
         }
         
-        .login-link {
+        .register-link {
             text-align: center;
             margin-top: 15px;
             font-size: 14px;
         }
 
-        .login-link a {
+        .register-link a {
             color: #4CAF50;
             text-decoration: none;
             font-weight: bold;
         }
 
-        .login-link a:hover {
+        .register-link a:hover {
             text-decoration: underline;
         }
     </style>
@@ -68,16 +68,14 @@
 <body>
 
 <div class="container">
-    <h2>Registrazione</h2>
-    <form action="register.php" method="POST">
-        <input type="text" name="nome" placeholder="Nome" required>
-        <input type="text" name="cognome" placeholder="Cognome" required>
+    <h2>Login</h2>
+    <form action="check_login.php" method="POST">
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Password" required>
-        <button type="submit">Registrati</button>
+        <button type="submit">Accedi</button>
     </form>
-        <p class="login-link">
-            Se hai già un account <a href="login.php">clicca qui per fare il login</a>
+        <p class="register-link">
+            Non hai un account? <a href="index.php">Clicca qui per registrarti</a>
         </p>
 </div>
 
