@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["ruolo"] = "studente";
 
         // VAI ALLA DASHBOARD
-        header("Location: dashboard.php");
+        header("Location: attivita.php");
         exit();
     } else {
         echo "Errore durante la registrazione";
